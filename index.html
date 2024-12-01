@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seedorf's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Seedorf</div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Seedorf</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Seedorf" class="profile-pic-edit">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Seedorf Otchere</h1>
+            <p class="section__text__p2 typing-text"><span></span></p>
+
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/project-3.png')">Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Send a Text</button>
+            </div>
+
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/seedorf-otchere-a7415b22b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BEWS9OxRoTLOxr%2FzXxITGfA%3D%3D'">
+                <img src="./assets/github.png" alt="GitHub Profile" class="icon" onclick="location.href='https://github.com/'">
+                <img src="./assets/instagram.png" alt="Instagram Profile" class="icon" onclick="location.href='https://www.instagram.com/seee_dorfff/profilecard/?igsh=MXdxdm5yaWR2d2pobQ== '">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" 
+                alt="Profile photo" 
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" 
+                        alt="Experience icon"
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>5+ years Graphics & Motion Design <br /> 2+ years Frontend Development <br/>A year in 3D Design</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                        alt="education icon"
+                        class="icon">
+                        <h3>Education</h3>
+                        <p> B.Sc. Computer Science <br /> B.Sc. Psychology <br /> Grambling State University</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut pariatur ad sit voluptates odio ab molestias, fuga consequuntur repudiandae maiores voluptatum aperiam, debitis delectus vitae temporibus nisi, asperiores veritatis quod.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#experience'"/>
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience and Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <h3>CSS</h3>
+                            <p>Experienced</p>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <h3>JavaScript</h3>
+                            <p>Intermediate</p>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <h3>React</h3>
+                            <p>Intermediate</p>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <h3>Boostrap</h3>
+                            <p>Intermediate</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <h3>Python</h3>
+                            <p>Experienced</p>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <h3>PostgreSQL</h3>
+                            <p>Basic</p>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <h3>Node JS</h3>
+                            <p>Basic</p>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <h3>Git</h3>
+                            <p>Intermediate</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Design</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <h3>Adobe Photoshop</h3>
+                            <p>Experienced</p>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <h3>Adobe Illustrator</h3>
+                            <p>Experienced</p>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <h3>Adobe After Effects</h3>
+                            <p>Experienced</p>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <h3>Figma</h3>
+                            <p>Intermediate</p>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <h3>Blender</h3>
+                            <p>Basic</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'"/>
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/elnissi/logo-design.jpg" 
+                    alt="ELNISSI Trading Logo" 
+                    class="project-img" 
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">
+                    ELNISSI Trading Enterprise
+                </h2>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="window.open('http://elnissitrading.com', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+                </div>
+                <div class="details-container color-container">
+                <div class="article-container">
+                    <video src="./assets/project-videos/guess-the-word.mp4" 
+                    alt="Guess the Word Game" 
+                    class="project-video"
+                    autoplay
+                    loop
+                    muted>
+                    Your Browser does not support the video tag
+                </video> 
+                </div>
+                <h2 class="experience-sub-title project-title">
+                    Guess the Word Game
+                </h2>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/seeedorfff/guess-the-word'">
+                        GitHub
+                    </button>
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/'">
+                        Live Demo
+                    </button>
+                </div>
+                </div>
+                <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-3.png" 
+                    alt="project 3" 
+                    class="project-img" 
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">
+                    Project Three
+                </h2>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/'">
+                        GitHub
+                    </button>
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/'">
+                        Live Demo
+                    </button>
+                </div>
+                </div>
+                <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-4.jpg" 
+                    alt="project 4" 
+                    class="project-img" 
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">
+                    Project Four
+                </h2>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/'">
+                        GitHub
+                    </button>
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/'">
+                        Live Demo
+                    </button>
+                </div>
+                </div>
+                <div class="details-container color-container">
+                <div class="article-container">
+                    <video src="./assets/project-videos/mindful-aerobics.mp4" 
+                    alt="Mindful Aerobics Video" 
+                    class="project-video"
+                    autoplay
+                    loop
+                    muted>
+                    Your Browser does not support the video tag
+                </video> 
+                    
+                </div>
+                <h2 class="experience-sub-title project-title">
+                    Project Four
+                </h2>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/'">
+                        GitHub
+                    </button>
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/'">
+                        Live Demo
+                    </button>
+                </div>
+                </div>
+            </div>    
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#contact'"/>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-item">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:seedorfotchere1000@gmail.com">seedorfotchere1000@gmail.com</a></p>
+            </div>
+
+            <div class="contact-info-item">
+                <img src="./assets/whatsapp.png" alt="WhatsApp icon" class="icon contact-icon" />
+                <p><a href="">WhatsApp</a></p>
+            </div>
+
+            <div class="contact-info-item">
+                <img src="./assets/phone-call.png" alt="Phone icon" class="icon contact-icon" />
+                <p><a href="tel:+1234567890">+1 318 265 7226</a></p>
+            </div>
+        </div>
+        <form id="contact-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Seedorf Otchere</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
